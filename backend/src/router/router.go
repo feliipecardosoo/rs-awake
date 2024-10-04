@@ -1,5 +1,5 @@
 package router
 
 func Gerar() string {
-	return "teste"
+	return "teste te"
 }
