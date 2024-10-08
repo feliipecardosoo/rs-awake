@@ -1,9 +1,16 @@
 package main
 
-func teste() string {
-	return "teste"
-}
+import (
+	"api/src/router"
+	"fmt"
+	"log"
+	"net/http"
+)
 
 func main() {
-	print(teste())
+	fmt.Println("Rodando API")
+
+	r := router.Gerar()
+
+	log.Fatal(http.ListenAndServe(":5000", r))
 }

@@ -1,5 +1,7 @@
 package router
 
-func Gerar() string {
-	return "teste te"
+import "github.com/gorilla/mux"
+
+func Gerar() *mux.Router {
+	return mux.NewRouter()
 }
