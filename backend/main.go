@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	fmt.Println("Rodando API")
+	fmt.Println("Rodando API ")
 
 	r := router.Gerar()
 
